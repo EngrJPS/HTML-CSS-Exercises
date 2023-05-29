@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Exercise 12</title>
+
+    <style>
+        body{
+            margin-bottom: 3000px;
+        }
+        
+        .bottomLeft-div{
+            background-color: black; 
+            color: white;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+        }
+        .sidebar-div{
+            background-color: green; 
+            color: white;
+            position: fixed;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            width: 200px;
+        }
+        .header-div{
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-div{
+            width: 400px;
+            padding: 30px;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>asdasd</div>
+    <div class="bottomLeft-div">
+        bottom-left
+    </div>
+    <div class="sidebar-div">
+        right-sidebar
+    </div>
+    <div class="header-div">
+        <div class="modal-div">
+            <p style="font-size: 180%; color: black; font-weight: bold; margin: 0px;">Modal Title</p>
+            <p>This is a modal</p>
+            <button>Close</button>
+        </div>
+    </div>
+</body>
+</html>

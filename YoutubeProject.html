@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Prototype</title>
+
+    <style>
+        .thumbnail-image{
+            width: 327.66px;
+            border-radius: 12px;
+        }
+
+        .profile-image{
+            width: 45px;
+            margin-top: 8px;
+            border-radius: 50%;
+        }
+        
+        .row-inline{
+            display: inline-block;
+            vertical-align: top;
+            text-align: justify;
+            padding: 5px;
+        }
+
+        p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .first-paragraph{
+            width: 195px;
+            font-weight: bold;
+            line-height: 20px;
+            margin-bottom: 6px;
+        }
+
+        .youtubeGallery-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 15px;
+            row-gap: 40px;
+            margin-top: 10px;
+        }
+        .header-div{
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            justify-content: space-between;
+        }
+
+        .left-div{
+            display: flex;
+            width: 255px;
+        }
+
+        .middle-div{
+            display: flex;
+            flex: 1;
+            margin-left: 70px;
+            margin-right: 55px;
+            max-width: 430px;
+        }
+
+        .right-div{
+            display: flex;
+            width: 300px;
+        }
+    </style>
+</head>
+<body style="padding-bottom: 1200px;">
+    <div class="header-div">
+        <div class="left-div">
+            <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/f16e92873fa7de49c7d0ac332b215ca66f08ce10/2-copy-of-code/lesson-17/icons/hamburger-menu.svg" alt="">
+            <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/f16e92873fa7de49c7d0ac332b215ca66f08ce10/2-copy-of-code/lesson-17/icons/youtube-logo.svg" alt="">
+        </div>
+        <div class="middle-div">
+            <input type="search" name="" id="" placeholder="Search">
+            <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/f16e92873fa7de49c7d0ac332b215ca66f08ce10/2-copy-of-code/lesson-17/icons/voice-search-icon.svg" alt="">
+        </div>
+        <div class="right-div">
+            <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/f16e92873fa7de49c7d0ac332b215ca66f08ce10/2-copy-of-code/lesson-17/icons/upload.svg" alt="">
+            <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/f16e92873fa7de49c7d0ac332b215ca66f08ce10/2-copy-of-code/lesson-17/icons/youtube-apps.svg" alt="">
+            <img src="https://raw.githubusercontent.com/SuperSimpleDev/html-css-course-2022/f16e92873fa7de49c7d0ac332b215ca66f08ce10/2-copy-of-code/lesson-17/icons/notifications.svg" alt="">
+            <img src="https://github.com/SuperSimpleDev/html-css-course-2022/blob/main/2-copy-of-code/lesson-17/channel-pictures/my-channel.jpeg?raw=true" alt="">
+        </div>
+    </div>
+    <div class="youtubeGallery-grid">
+        <div>
+            <div>
+                <img src="https://i.ytimg.com/vi/WG5ikvJ2TKA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE
+                =&rs=AOn4CLB7KoWR-T6ld38_AImdT0KNx3mMZQ" alt="" class="thumbnail-image"> 
+            </div>
+            <div style="padding: 6px;">
+                <div style="display: inline-block;">
+                    <img src="https://yt3.ggpht.com/ytc/AGIKgqOwoeDhHgV6Hi-bzWr8S43mH3TAihwZbXCyruoC=s68-c-k-c0x00ffffff-no-rj" alt="" class="profile-image">
+                </div>
+                <div style="display: inline-block; vertical-align: top; margin-left: 6px;">
+                    <p class="first-paragraph">Frontend web development - a complete overview</p>
+                    <p style="margin-bottom: 0px;">SuperSimpleDev</p>
+                    <p style="margin-top: 0px;">132k views &#183; 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div>
+            <div>
+                <div>
+                    <img src="https://i.ytimg.com/vi/8Q7WwX0oHMY/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCiQ8PtQwqAo3ZmEAneL41TwdfixQ" alt="" class="thumbnail-image"> 
+                </div>
+                <div style="padding: 6px;">
+                    <div style="display: inline-block;">
+                        <img src="https://yt3.ggpht.com/rGnWZZ5Xvt7jsv0rocXVN05tzDb-RkHXjUYbRc4WOg476fuQmjkXP9z7QaM_JQUjtq7IayyEEA=s68-c-k-c0x00ffffff-no-rj" alt="" class="profile-image">
+                    </div>
+                    <div style="display: inline-block; vertical-align: top; margin-left: 6px;">
+                        <p class="first-paragraph">90's Lo-fi Chillout Chill Lofi Beats ~ To Listen At Night</p>
+                        <p style="margin-bottom: 0px;">90's Lo-fi Chilloutv</p>
+                        <p style="margin-top: 0px;">72k views &#183; streamed 12 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <img src="https://i.ytimg.com/vi/VXtaMAN9zX4/hqdefault.jpg?sqp=-oaymwE9COADEI4CSFryq4qpAy8IARUAAAAAGAElAADIQj0AgKJDeAHwAQH4Af4JgALQBYoCDAgAEAEYciBKKDwwDw==&rs=AOn4CLCQtuB8IqBMZPMiALVm1yp5K96CPQ" alt="" class="thumbnail-image"> 
+                </div>
+                <div style="padding: 6px;">
+                    <div style="display: inline-block;">
+                        <img src="https://yt3.ggpht.com/a4oHUyMRD9TJ5sgDpZk7McspMZRIDE5ynrjWRg_XowjOuoXOGjXKkBu-a275M3AV6AYxBvImdQ=s68-c-k-c0x00ffffff-no-rj" alt="" class="profile-image">
+                    </div>
+                    <div style="display: inline-block; vertical-align: top; margin-left: 6px;">
+                        <p class="first-paragraph">Pentakill: Lost Chapter</p>
+                        <p style="margin-bottom: 0px;">Riot Music</p>
+                        <p style="margin-top: 0px;">132k views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <img src="https://i.ytimg.com/vi/oltsfcVWe3A/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBeK-PILXVZ2Nstpf5dmiKLq2LxFQ" alt="" class="thumbnail-image"> 
+                </div>
+                <div style="padding: 6px;">
+                    <div style="display: inline-block;">
+                        <img src="https://yt3.ggpht.com/yOKpkQ59m7IgWdRntWRlykfG2zlZPWM1tP53mbYQLhcTLojszoc-6xQq0A_eICkjKuHBC0tp=s68-c-k-c0x00ffffff-no-rj" alt="" class="profile-image">
+                    </div>
+                    <div style="display: inline-block; vertical-align: top; margin-left: 6px;">
+                        <p class="first-paragraph">The greatest Dialogue Plato Ever Wrote</p>
+                        <p style="margin-bottom: 0px;">Jeffrey Kaplan</p>
+                        <p style="margin-top: 0px;">836k views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <div>
+                    <img src="https://i.ytimg.com/vi/Zf6XTfamTTI/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB-oZNe23I7p_segY7q6gjoKVPt_A" alt="" class="thumbnail-image"> 
+                </div>
+                <div style="padding: 6px;">
+                    <div style="display: inline-block;">
+                        <img src="https://yt3.ggpht.com/ihIzZ2ruM266iNUNDx7zRW6tA1fSYCYVqtm14qXyag21lA6TWD_uPkIyiJZ0xF52f55jJnMhfQY=s68-c-k-c0x00ffffff-no-rj" alt="" class="profile-image">
+                    </div>
+                    <div style="display: inline-block; vertical-align: top; margin-left: 6px;">
+                        <p class="first-paragraph">Chill Lofi Beats</p>
+                        <p style="margin-bottom: 0px;">Chill Lofi Beats</p>
+                        <p style="margin-top: 0px;">132k views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <div>
+                <div>
+                    <img src="https://i.ytimg.com/vi/ZfTXFEvJSaI/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAhoo6M3wp8egY5sqs4CatYSfZh1A" alt="" class="thumbnail-image"> 
+                </div>
+                <div style="padding: 6px;">
+                    <div style="display: inline-block;">
+                        <img src="https://yt3.ggpht.com/gw6BRWav3SyG39C2kmEM1VSb5ocjEWuKRBKPhRndqOKmAxj3rzB5OOVQKeE0751DJrPWJH7c=s68-c-k-c0x00ffffff-no-rj" alt="" class="profile-image">
+                    </div>
+                    <div style="display: inline-block; vertical-align: top; margin-left: 6px;">
+                        <p class="first-paragraph">Concentration</p>
+                        <p style="margin-bottom: 0px;">Ruri Ohama</p>
+                        <p style="margin-top: 0px;">132k views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div>
+    <img src="https://i.ytimg.com/vi/WG5ikvJ2TKA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB7KoWR
+    -T6ld38_AImdT0KNx3mMZQ" alt="" class="thumbnail-image">
+    </div>
+    <div>
+        <div class="row-inline">
+            <img src="https://yt3.ggpht.com/ytc/AGIKgqOwoeDhHgV6Hi-bzWr8S43mH3TAihwZbXCyruoC=s68-c-k-c0x00ffffff-no-rj" alt="" class="profile-image">
+        </div>
+        <div class="row-inline">
+            <p class="first-paragraph">Frontend web development - a complete overview</p>
+            <p>SuperSimpleDev</p>
+            <p>132k views &#183; 1 year ago</p>
+        </div>
+    </div> -->
+</body>
+</html>
