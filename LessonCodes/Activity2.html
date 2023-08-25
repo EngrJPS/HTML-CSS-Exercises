@@ -33,32 +33,94 @@
    1. Create a folder specifically for your project
       # <dfn title="Make Directory: Its creating a new folder or directory">mkdir <var>[yourFolderName]</var></dfn>
 
+      Output:
+      <samp>
+         $ mkdir webDev
+         $ ls -ld webDev
+         drwxr-xr-x 1 EAD+jserafin2 4096 0 Aug 22 18:16 webDev/
+      </samp>
    2. After creating your folder, change directory using <q><strong>cd</q> command</strong>
       # <dfn title="Change Directory: This command will move from one folder to another.">cd <var>[yourFolderName]</var></dfn> 
 
+      Output:
+      <samp>
+         ~/Projects/webDev
+      </samp>
    3. Initialize your github repository using the <strong><q>git init</q> command</strong>
       # <dfn title="This command creates an empty Git repository">git init</dfn>
 
+      Output:
+      <samp>
+         $ git init
+         Initialized empty Git repository in C:/Users/jserafin2/Projects/webDev/.git/
+      </samp>
+
    4. After initializing you want to <strong>make sure that everything</strong> is setup properly
-      # <dfn title="This command displays the files listed in your current directory">ls -lrth</dfn>
+      # <dfn title="This command displays the files listed in your current directory">ls -lrtha</dfn>
       # <dfn title="&quot;P&quot;rint &quot;W&quot;orking &quot;D&quot;irectory">pwd</dfn>    
 
+      Output:
+      <samp>
+         $ ls -lrtha
+         total 9.0K
+         drwxr-xr-x 1 EAD+jserafin2 4096 0 Aug 19 10:47 ../
+         -rw-r--r-- 1 EAD+jserafin2 4096 8 Aug 22 18:16 README.md
+         drwxr-xr-x 1 EAD+jserafin2 4096 0 Aug 25 18:47 ./
+         drwxr-xr-x 1 EAD+jserafin2 4096 0 Aug 25 18:47 .git/ <-- This should appear
+
+         $ pwd
+         /c/Users/jserafin2/Projects/webDev
+      </samp>
    5. Enter your credentials to your computer using the <q><strong>git config</q></strong>
       # <dfn title="git-config - Get and set repository or global options">git config --global user.email <var>"myName@example.com"</var></dfn>
-
+      
+      Output:
+      <samp>
+         $ git config --global user.email "myName@example.com
+      </samp>
    6. Add your remote repository in your local machine using the &quot;git remote add&quot; command
       # <dfn title="Manage the set of repositories (&quot;remotes&quot;) whose branches you track.">git remote add <var>(localComputerName)</var> <var>(urlToYourRepository)</var></dfn>
+
+      Output:
+      <samp>
+         ~/Projects/webDev (master)
+         $ git remote add EngrJPS https://github.com/EngrJPS/(repository)
+      </samp>
 
    7. Make sure you're in the correct branch using the <strong><q>git branch</q> command </strong>
       # <dfn title="git-branch - List, create, or delete branches">git branch -M main</dfn>
 
+      Output:
+      <samp>
+         $ git branch -M main
+
+         ~/Projects/webDev (main)
+      </samp>
    8. Add your code to the staging modified files, <strong>be sure to add your 
       file one step at a time to avoid adding unecessary files and folders</strong>
       adding to your staging phase
       # <dfn title="git-add - Add file contents to the index">git add <var>[fileName]</var></dfn>
 
+      Output:
+      <samp>
+         ~/Projects/webDev (main)
+         $ git add README.md
+
+      </samp>
    9. Check if it successfully moves to the staging phase
       # <dfn title="git-status - Show the working tree status">git status</dfn>
+
+      Output:
+      <samp>
+         $ git status
+         On branch main
+
+         No commits yet
+
+         Changes to be committed:
+         (use "git rm --cached <file>..." to unstage)
+               new file:   README.md
+      </samp>
 
    10. Commit your changes to your local repository &quot;git commit&quot;
       # <dfn title="Create a new commit containing the current contents of the index and the given log message describing the changes. ">git commit -m <q>First activity commit</q></dfn>
