@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Exercise 9</title>
+    <style>
+        .first-div{
+            display: grid;
+            grid-template-columns: 200px 75px;
+        }
+        p{
+            font-size: 150%;
+        }
+        .second-div{
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+
+        .third-div{
+            display: grid;
+            column-gap: 20px;
+            row-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .facebookFriends-gallery{
+            display: grid;
+            grid-template-columns: 215px 215px 215px;
+            justify-content: center;
+            column-gap: 30px;
+        }
+        .name-paragraph{
+            font-weight: bold;
+            font-size: 150%;
+            margin-top: 6px;
+            margin-left: 10px;
+            margin-bottom: 0px;
+        }
+
+        .thumbnail-image{
+            width: 30px ;
+            height: 30px; 
+            border-radius: 50%;
+            margin-top: 5px;
+            margin-left: 8px;
+            background-color: orange;
+        }
+
+        .profile-image{
+            height: 100%;
+            cursor: pointer;
+        }
+        .mutual-paragraph{
+            font-size: 15px;
+            margin-top: 15px;
+            margin-left: 4px;
+            margin-bottom: 15px;
+            display: inline-block;
+            color: grey;
+            vertical-align: top;
+        }
+        .add-button{
+            border-style: none;
+            padding: 10px;
+            font-weight: bold;
+            background-color: blue;
+            color: white;
+            margin-left: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: opacity 0.5ms;
+        }
+        .add-button:hover{
+            cursor: pointer;
+        }
+
+        .add-button:active{
+            opacity: 0.65;
+        }
+        .cancel-button{
+            border: 0.5px solid grey;
+            padding: 10px;
+            font-weight: bold;
+            background-color: white;
+            color: black;
+            margin-left: 3px;
+            border-radius: 8px;
+            display: inline-block;
+            transition: color 0.5ms, background-color 1ms, opacity 0.5ms;
+        }
+        .cancel-button:hover{
+            color: white;
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body style="padding-bottom: 1200px;">
+    <p>11a. Create a grid with 2 columns with widths 200px and 75px</p>
+    <div class="first-div">
+        <div style="background-color: lightgray;">200px</div>
+        <div style="background-color: lightsalmon; ">75px</div>
+    </div>
+    <p>11.b Create a grid with 3 columns. Width = 50px | remaining space | 75px</p>
+    <div class="second-div">
+        <div style="background-color: lightgray;">col1</div>
+        <div style="background-color: lightsalmon;">col2</div>
+        <div style="background-color: lightgray;">col3</div>
+    </div>
+    <p>11.c Create a grid with 4 equal columns that take up the entire page. Space between columns = 20 px</p>
+    <p>Space between rows = 10px</p>
+    <div class="third-div">
+        <div style="background-color: lightsalmon;">col1</div>
+        <div style="background-color: lightsalmon;">col1</div>
+        <div style="background-color: lightsalmon;">col1</div>
+        <div style="background-color: lightsalmon;">col1</div>
+        <div style="background-color: lightsalmon;">col1</div>
+        <div style="background-color: lightsalmon;">col1</div>
+        <div style="background-color: lightsalmon;">col1</div>
+        <div style="background-color: lightsalmon;">col1</div>
+    </div>
+
+    <p>11.d Continue from exercise 10e. Recreate the design using CSS Grid</p>
+
+    <div class="facebookFriends-gallery">
+        <div style="height: 300px; box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.66);">
+            <div style="background-color: lightslategray; height: 175px; justify-content: center; text-align: center; ">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="" class="profile-image">
+            </div>
+            <p class="name-paragraph">Oliver</p>
+            <div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="" class="thumbnail-image">
+                <p class="mutual-paragraph">2 mutual friends</p>
+            </div>
+            <button class="add-button">Add friend</button>
+            <button class="cancel-button">Cancel</button>
+        </div>
+        <div>
+            <div style="height: 300px; box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.66);">
+                <div style="height: 175px; justify-content: center; text-align: center; ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-bqk_2e_2tqkFFpOD16xfqNs1DD85Tl7bxg&usqp=CAU" alt="" style="height: 100%;" class="profile-image">
+                </div>
+                <p class="name-paragraph">Mimi</p>
+                <div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="" class="thumbnail-image">
+                    <p class="mutual-paragraph">3 mutual friends</p>
+                </div>
+                <button class="add-button">Add friend</button>
+                <button class="cancel-button">Cancel</button>
+            </div>
+        </div>
+        <div>
+            <div style="height: 300px; box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.66);">
+                <div style="height: 175px; justify-content: center; text-align: center; ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-a2UyBMbvgui4cM-971Z2YzDhpmYF-MquIsTADv_c0B3_P4HRLqR3AEoz5Q6foXCWUtk&usqp=CAU" alt="" style="height: 100%;" class="profile-image" >
+                </div>
+                <p class="name-paragraph">Rex</p>
+                <div>
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="" class="thumbnail-image">
+                    <p class="mutual-paragraph">4 mutual friends</p>
+                </div>
+                <button class="add-button">Add friend</button>
+                <button class="cancel-button">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
