@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ /*Declare variable*/
+:root{
+    --line-border-fill: #7fffd4;
+    --line-border-empty: #eceaec;
+}
+
+/*Universal class*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+/*Body class*/
+
+body{
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*container class for divs*/
+
+.container {
+    text-align: center;
+}
+
+/*progress-container class for effects*/
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+
+/*What is the :: pseudo class? How can I use that?*/
+
+.progress-container::before{
+    content: '';
+    background-color:  var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/*progress bar class for style*/
+
+.progress{
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+/*Circle class for styles*/
+
+.circle{
+    background-color: white;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: .4s ease;
+}
+
+/*circle and active class when both are paired cirle class > active class */
+
+.circle.active{
+    border-color: var(--line-border-fill)
+}
+
+/*Button class for styling buttons*/
+
+.btn {
+    background-color: var(--line-border-fill);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: inherit;
+    margin: 14px;
+    padding: 8px 30px;
+    font-size: 14px;
+}
+
+/*btn class w active pseudo class for when user interacts with the button it responds to the user*/
+
+.btn:active{
+    transform: scale(0.98);
+}
+
+/*btn class w focus pseudo class research more about focus pseudo class*/
+
+.btn:focus{
+    outline: 0;
+}
+
+/*btn class w disabled pseudo class; if the button has disabled style it is unable to interact*/
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+}
