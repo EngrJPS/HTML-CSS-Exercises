@@ -1,0 +1,34 @@
+.imgDiv{
+    width: 500px;
+    margin-left: 27%;
+    margin-top: 260px;
+    border: 5px solid white;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px rgba(255, 255, 255, 0.759);
+}
+
+.titleDiv{
+    text-align: center;
+    margin-left: 27%;
+    margin-right: 23%;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+.quotesDiv{
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 25%;
+    padding-bottom: 20px;
+    margin-right: 20%;
+    text-align: center;
+}
+
+*{
+    
+    background-color: black;
+}

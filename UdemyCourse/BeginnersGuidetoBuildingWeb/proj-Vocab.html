@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="entry">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foreign Vocab website</title>
+    <link rel="stylesheet" href="./CSS/proj-VocabWeb.css">
+</head>
+<body>
+    <h1>Colors</h1>
+    <h2>Learn the colors in Spanish!</h2>
+    <h2 class="color-title" id="redFont">Rojo</h2>
+    <div class="box" id="redBox">
+        <p>dsadasdasdasdas</p>
+        <p>dsadasdasdasdas</p>
+        <p>dsadasdasdasdas</p>
+        <p>dsadasdasdasdas</p>
+    </div>
+    <h2 class="color-title" id="blueFont">Azul</h2>
+    <div class="box" id=blueBox></div>
+    <h2 class="color-title" id="orangeFont">Anaranjado</h2>
+    <div class="box" id="orangeBox"></div>
+    <h2 class="color-title" id="greenFont">Verde</h2>
+    <div class="box" id="greenBox"></div>
+    <h2 class="color-title" id="yellowFont">Amarillo</h2>
+    <div class="box" id="yellowBox"></div>
+    <br>
+    <button style="width: 90px; font-weight: bold;" onclick="removeCSS()">Try me</button>
+</body>
+<script>
+    let counter = 0;
+    function removeCSS(){
+        counter++;
+        if(counter % 2 !== 0){
+            document.getElementById("entry").innerHTML = '<title>Foreign Vocab website w/o CSS</title> \n<link rel="stylesheet" href="./CSS/proj-AlternativeVocab.css">'
+        }else{
+            document.getElementById("entry").innerHTML = '<title>Foreign Vocab website w/o CSS</title> \n<link rel="stylesheet" href="./CSS/proj-VocabWeb.css">'
+        }
+    }
+</script>
+</html>
