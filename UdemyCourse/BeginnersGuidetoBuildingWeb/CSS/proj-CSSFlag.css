@@ -1,0 +1,39 @@
+.flag{
+    width: 900px;
+    height: 600px;
+    background-color: #CE1126;
+}
+
+div div{
+    background-color: #002868;
+    height: 300px;
+    position: relative;
+    margin-top: 58px;
+}
+
+div p{
+    text-align: center;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    font-size: 4.3rem;
+}
+
+div div div{
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 350px;
+    position: absolute;
+    margin-top: 50px;
+}
+
+div div div p {
+    text-align: center;
+    color: black;
+}
+
+p{
+    margin: 0px;
+    margin-top: 1dvh;
+}
