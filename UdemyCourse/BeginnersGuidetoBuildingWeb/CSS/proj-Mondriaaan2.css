@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.grid-container{
+    display: grid;
+    gap: 9px;
+    background-color: black;
+    width: 100%;
+    height: 760px;
+    max-width: 760px;
+    grid-template-columns: 320px 210px 100px 100px;
+    grid-template-rows: repeat(3, 100px) repeat(3, 100px) 100px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.redBoxA{
+    background-color: red;
+    grid-row: span 3;
+}
+
+.redBoxB{
+    background-color: red;
+    grid-column: span 1;
+}
+
+.redBoxC{
+    background-color: red;
+}
+
+.blueBoxA{
+    background-color: blue;
+    grid-column: span 2;
+}
+
+.blueBoxB{
+    background-color: blue;
+    grid-column: span 2;
+}
+.blueBoxC{
+    background-color: blue;
+    grid-column: span ;
+}
+
+.yellowBox{
+    background-color: gold;
+    grid-row: span 3;
+}
+.whiteA{
+    background-color: white;
+    grid-row: span 3;
+}
+
+.whiteB{
+    background-color: white;
+}
+
+.whiteC{
+    background-color: white;
+    grid-row: span 3;
+}
+
+.whiteD{
+    background-color: white;
+    grid-column: span 2;
+}
+.whiteE{
+    background-color: white;
+}
+
+.whiteF{
+    background-color: white;
+    grid-area: 7 / 1 / 8 / 2;
+}
+
+.whiteG{
+    background-color: white;
+    grid-column: 3/5;
+}
