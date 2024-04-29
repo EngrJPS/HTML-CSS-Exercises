@@ -13,4 +13,13 @@ li{
     background-color: gold;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+}
+
+.container > li:nth-child(4){
+    flex-grow: 2;
+}
+
+.container > li:nth-child(6){
+    flex-grow: 3;
 }
