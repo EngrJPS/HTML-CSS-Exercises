@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+<div class="wrapper__contact">
+    <div class="content_contact">
+        <h1>Interested? Contact me!</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At quam quos libero culpa amet nihil quibusdam praesentium quaerat, earum saepe ipsam eligendi nobis modi officia reprehenderit laudantium adipisci laborum ullam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, non? Eum ad hic, possimus numquam accusamus, doloribus amet harum accusantium fugit recusandae fuga ut obcaecati exercitationem reprehenderit aliquid ipsa earum.</p>
+    </div>
+    <div class="contact__form">
+        <form action="/submit" method="POST">
+            <label for="fName">First name&ast;</label><br>
+            <input type="text" name="fName" placeholder="firstname" required><br>
+            <label for="lName">Last name</label><br>
+            <input type="text" name="lName" placeholder="lastname" required><br>
+            <label for="userEmail">Email&ast;</label><br>
+            <input type="email" name="userEmail" required><br>
+            <label for="userNeed">What can I help you with?</label>
+            <textarea name="userNeed" id="userNeed" rows="5" cols="70"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,21 @@
+{
+  "name": "setup-npm",
+  "version": "1.0.0",
+  "description": "I'm configurng my NPM dev setup",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jimson Paul Serafin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "inquirer": "^9.2.20",
+    "morgan": "^1.10.0",
+    "qr-image": "^3.2.0",
+    "sillyname": "^0.1.0",
+    "superheroes": "^3.0.0"
+  }
+}

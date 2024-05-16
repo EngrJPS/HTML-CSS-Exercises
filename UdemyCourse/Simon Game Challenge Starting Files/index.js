@@ -25,18 +25,13 @@ function nextSequence(){
     let randomNumber = Math.floor((Math.random() * 3) + 1);
     let randColors = buttonColors[randomNumber];
     gamePattern.push(randColors);
+    //This staggers the execution of the game pattern, ensuring a one-second interval between each output.
     for(let i= 0; i < gamePattern.length; i++){
         setTimeout(function(){
             $("#"+gamePattern[i]).fadeOut(100).fadeIn(100);
             playSound(gamePattern[i]);
-        }, i * 500);
+        }, i * 600);
     }
-    // setTimeout(function(){
-    //     for(let i= 0; i < gamePattern.length; i++){
-    //         $("#"+gamePattern[i]).fadeOut(100).fadeIn(100);
-    //         playSound(gamePattern[i]);
-    //     }
-    // }, 100);
     // $("#"+randColors).fadeOut(100).fadeIn(100);
     // playSound(randColors);
 }

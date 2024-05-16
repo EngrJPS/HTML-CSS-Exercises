@@ -1,0 +1,170 @@
+*{
+    font-family: "Poppins", sans-serif, Arial;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin-left: 10px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+.nav__content{
+    border-bottom: 1px solid black;
+    margin: 0px 20px 20px 20px;
+    padding: 5px;
+}
+
+.nav__content, .nav__left, .nav__title, .nav__right{
+    display: flex;
+    align-items: center;
+}
+
+.nav__right{
+    margin-right: 10px;
+}
+
+.nav__left, .nav__right{
+    gap: 10px;
+}
+
+.nav__content{
+    justify-content: space-between;
+}
+
+.title{
+    margin: 0;
+}
+
+.title > a{
+    color: black;
+    text-decoration: none;
+}
+
+/* main content */
+
+main {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.wrapper__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px
+}
+
+.main__content{
+    display: flex;
+    grid-column: span 2;
+}
+
+.main_thumbnail{
+    background-image: url(https://st3.depositphotos.com/3837271/12954/i/450/depositphotos_129544134-stock-photo-yellow-road-signs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.sub_content1, .sub_content2{
+    display: flex;
+}
+
+.sub__thumbnail1, .sub__thumbnail2{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQd39r31vTIrSgCagKNXEonIe9M8wToj4Z0gVi3da8dT7cH0rh_1wNZ_V-ryPKqmDl7q4&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vw;
+}
+
+.sub_title{
+    width: 20vw;
+}
+
+.main_title{
+    width: 100vw;
+    height: auto;
+}
+
+.main_title > p{
+    margin-bottom: 300px;
+}
+
+.wrapper_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 3vh;
+    gap: 7px;
+}
+
+.wrapper_content > div {
+    display: flex;
+}
+
+.temp__thumbnail{
+    background-image: url(https://st3.depositphotos.com/3837271/12954/i/450/depositphotos_129544134-stock-photo-yellow-road-signs.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1000px;
+}
+
+/* Footer styles */
+
+footer{
+    text-align: right;
+}
+
+/* About me section */
+.wrapper___content1{
+    display: flex;
+    gap: 10px;
+    height: 45vh;
+}
+
+.aboutThumbnail{
+    background-image: url(../images/profileResume.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100vh;
+}
+
+/* Contact page */
+.wrapper__contact{
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+}
+
+.content_contact{
+    margin-top: 50px;
+    padding-right: 100px;
+}
+
+.contact__form{
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    height: fit-content;
+}
+
+input{
+    margin-right: 0px;
+}
+
+/* Create page */
+.wrapper__create{
+    margin: 0px 245px;
+    height: 100vh;
+}
