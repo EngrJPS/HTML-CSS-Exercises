@@ -1,0 +1,71 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 50px 50px 0 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+h1{
+    font-size: 5rem;
+    padding-right: 500px;
+}
+
+.main{
+    flex: 1;
+}
+
+span{
+    color: darkblue;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.tile-image{
+    height: 200px;
+    float: left;
+    margin-right: 50px;
+}
+
+footer{
+    text-align: right;
+    color: midnightblue;
+}
+
+.card{
+    width: 45%;
+}
+
+@media (max-width: 680px){
+    .logo{
+        width: 100px;
+    }
+
+    h1{
+        font-size: 3.5rem;
+        text-align: center;
+        padding: 0;
+    }
+
+    .card{
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
+    /*Selects all elements with card that is a descendant of an element with img*/
+    .card img{
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
+    }
+}

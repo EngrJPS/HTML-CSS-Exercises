@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+<h1>Create a post now!</h1>
+<div class="wrapper__create">
+    <div>
+        <!-- If posterId variable is defined render the title and the content of the page -->
+        <% if (locals.posterId) { %>
+            <form action="/update" method="post">
+                <h3>Title</h3>
+                <input type="text" name="title" value="<%= title %>" size="96" required><br>
+                <hr>
+                <h3>Thoughts!</h3>
+                <textarea name="content" id="content" cols="100" rows="20" required><%= content %></textarea>
+                <input hidden type="text" name="blogId" value=" <%=posterId%>">
+                <div>
+                    <input type="submit" value="Update Post">
+                </div>
+            </form>
+        <!-- else render the page with empty text input and text area -->
+        <% } else { %>
+            <form action="/save" method="post">
+                <h3>Title</h3>
+                <input type="text" name="title" placeholder="What's on your mind?" size="96"><br>
+                <hr>
+                <h3>Thoughts!</h3>
+                <textarea name="content" id="content" cols="100" rows="20" placeholder="Make your thoughts into reality!"></textarea>
+                <div>
+                    <input type="submit" value="Create Post">
+                </div>
+            </form>
+        <% } %>
+    </div>
+</div>
+<%- include("partials/footer") %>

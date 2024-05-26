@@ -1,0 +1,47 @@
+<%- include("partials/header.ejs") %>
+<div class="wrapper__content">
+    <div class="main__content">
+        <div class="main_title">
+            <h1><%= blogs[0].title %></h1>
+            <p><%= blogs[0].content %></p>
+            <a href="#">See more</a>
+        </div>
+        <div class="main_thumbnail"></div>
+    </div>
+    <div class="sub_content1">
+        <div class="sub_title">
+            <h1><%= blogs[1].title %></h1>
+            <p><%= blogs[1].content  %></p>
+            <a href="#">See more</a>
+        </div>
+        <div class="sub__thumbnail1"></div>
+    </div>
+    <div class="sub_content2">
+        <div class="sub_title">
+            <h1><%= blogs[2].title %></h1>
+            <p><%- blogs[2].content %></p>
+            <a href="#">See more</a>
+        </div>
+        <div class="sub__thumbnail2"></div>
+    </div>
+</div>
+
+<section>
+    <div class="wrapper_content">
+        <% if(blogs.length === 0) {%>
+            <h1 style="text-align: center">No posts yet</h1>
+        <% } else { %>
+            <% blogs.forEach( (blog) => { %>
+                <div>
+                    <div class="temp__thumbnail"></div>
+                    <div>
+                        <h1><%= blog.title %></h1>
+                        <p><%= blog.content %></p>
+                        <p><a href="/content/<%= blogs.indexOf(blog) %>">See more</a></p>
+                    </div>
+                </div>
+            <% }); %>
+        <% } %>
+    </div>
+</section>
+<%- include("partials/footer.ejs") %>

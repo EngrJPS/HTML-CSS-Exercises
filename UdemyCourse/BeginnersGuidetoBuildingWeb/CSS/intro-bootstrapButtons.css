@@ -1,0 +1,17 @@
+.custom-btn{
+    --bs-btn-padding-y: .25rem; 
+    --bs-btn-padding-x: .5rem; 
+    --bs-btn-font-size: .75rem;
+}
+
+body{
+    width: auto;
+    height: 100dvh;
+}
+
+.flex-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}

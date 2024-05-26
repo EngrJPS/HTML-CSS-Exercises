@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 400px minmax(200px, 500px);
+    grid-template-rows: 1fr 1fr 2fr;
+    margin: 5px 5px 5px 5px;
+    grid-auto-rows: 50px;
+}
+
+.container-holder{
+    background-color: rgba(128, 128, 128, 0.17);
+    padding: 20px;
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+.grid-item{
+    color: white;
+    border: 1.5px solid white;
+    padding: 10px;
+    background-color: darkgreen;
+}

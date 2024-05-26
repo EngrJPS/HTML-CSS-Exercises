@@ -1,0 +1,1 @@
+Return the same sequence as the pattern of generated game pattern.

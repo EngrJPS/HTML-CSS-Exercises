@@ -1,0 +1,37 @@
+.container{
+    background-color: rgb(237, 233, 233);
+    height: 5rem;
+}
+
+.greenBox{
+    background-color: green;
+    border: 1px solid white;
+    color: white;
+}
+
+.headerText{
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+.lighterBox{
+    background-color: indianred;
+    color: white;
+    border: 1px solid white;
+    margin-top: 100px;
+}
+
+.boxSize{
+    height: 100px;
+}
+
+.darkBox{
+    background-color: darkslategray;
+    color: white;
+    border: 3px solid white;
+}
+
+.flexBox{
+    display: flex;
+
+}

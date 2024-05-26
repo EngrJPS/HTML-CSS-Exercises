@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jimson Paul Serafin">
+    <meta name="description" content="Selectors">
+    <title>Cascading Style Sheets (CSS)</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin-bottom: 1000px;
+        }
+        .contentSeparator{
+            width: 50%;
+            margin-left: 0px;
+        }
+        .introTitle{
+            text-align: center;
+        }
+        .hrTitle{
+            width: 75%;
+        }
+        .introParagraph{
+            text-align: justify;
+            margin-left: 30px;
+            margin-right: 30px;
+            font-family: 'Arial', Courier, monospace;
+        }
+        .contentParagraph{
+            margin-right: 300px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="introTitle">Formatting to the HTML elements</h1>
+    <hr class="hrTitle">
+    <p class="introParagraph">
+        In this chapter, we start with an overview of <abbr title="Cascading Style Sheets">CSS</abbr> concepts and CSS basic syntax.
+        We put those things into practice by applying CSS rules to various elements, including <code><mark>span</mark></code> 
+        and <code><mark>div</mark></code> elements.
+        We show you how to position those rules (1) <strong> <dfn title="head element">the top of the web page's main file</dfn> </strong> 
+        or (2) in an <strong><dfn title="CSS file">external file</dfn></strong>.
+    </p>
+
+    <h2>CSS Rules</h2>
+    <hr class="contentSeparator">
+    <p class="contentParagraph">
+        The way CSS works is that <em>CSS rules</em> are applied to elements within a web page.
+        Browsers determine which elements to apply the CSS rules to with the help of <strong>Selectors</strong>.
+        There are quite a few different types of selectors. For now, we'll introduce <mark>type selectors</mark> and <mark>universal selectors</mark>.
+    </p>
+    <h3>Type Selectors</h3>
+    <p class="contentParagraph">
+        With <i>type selector</i>, you use an element type (e.g, <code>hr, h1, p</code>) to match all instances of that element type and then apply
+        specified formatting features to those instance. 
+    </p>
+
+    <h4>For Example:</h4>
+
+    <pre>
+        <code>
+            <code> 
+    &lt;!-- The following CSS rule uses a type selector 
+    with the hr element type and applies a width of 50% 
+    to all the hr elements in the current web page --&gt;
+            </code>
+            hr {width: 50%}
+        </code>
+    </pre>
+
+    <h3>Universal selectors</h3>
+    <p class="contentParagraph">
+        Now for another type of selector &hyphen; the universal selector. The <i>universal selector</i> uses the same syntax as the type selector,
+        except that instead of <u><dfn title="For example: h1 .. h6, p, hr, div">specifying an element</dfn></u> you specify &ast;.
+        The asterisk is a <strong>wildcard</strong>. In general, a <i>wildcard</i> is something that matches every item in a collection of things.
+    </p>
+    <pre>
+        <code>
+            <code>
+    &lt;!-- The &ast; matches every element in a web
+        pages collection of elements.--&gt;
+            </code>
+         * {font-weight: bold}
+        </code>
+    </pre>
+
+    <h2>CSS Syntax and Style</h2>
+    <h3>CSS Syntax</h3>
+    <p class="contentParagraph">
+        In this section, we address <abbr title="Cascading Style Sheets">CSS</abbr> syntax details. First &hyphen; the syntax <em><code>style</code> container</em>.
+        Refer from the previous lessons and note how the three CSS rules are enclosed in a <code>style</code> container.
+    </p>
+    <br>
+    <p>Here's the relevant code:</p>
+
+    <pre>
+        <code>
+            &lt;style&gt;
+                &ast; &lbrace;text-align: center&semi;&rbrace;
+                hr &lbrace;width: 50&percnt;&semi;&rbrace;
+                h2, p &lbrace;font-style&colon; italic&semi; color&colon; blue&semi;&rbrace;
+            &lt;/style&gt;
+        </code>
+    </pre>
+
+    <p>
+        In the <code>style</code> start tag, it's legal to include a <code>type</code> attribute with a 
+        value of <mark>&quot;text/css&quot;</mark>, like this&colon;
+    </p>
+    <pre>
+        <code>
+            &lt;style type=&quot;text/css&quot;&gt;
+        </code>
+    </pre>
+    <h3>CSS Style</h3>
+    <p class="contentParagraph">
+        Now we'll look at some CSS guidelines that are not enforced by browsers or HTML5 standard.
+        They are style guidelines, and you should follow them so your code is easy to understand and maintain.
+    </p>
+    <p style="text-indent: 15px;">For short CSS rules, use this format&colon;</p>
+    <pre>
+        <code>
+            selectors(s) &lbrace;property1&semi; values&semi; property2&colon; values&semi; &rbrace;;
+        </code>
+    </pre>
+    <p class="contentParagraph">
+        When we hae muti-line container elments, we will use the <mark><strong>block formatting</strong></mark> where the <em>start tag</em> and <em>end tag</em> are aligned at the left,
+        and interior lines are indented. If you have a CSS rule that's kind of long (at least two or more property-pairs), 
+        you should use block formatting like this&colon;
+    </p>
+
+    <pre>
+        <code>
+            selctor(s) &lbrace;
+                property1&colon; value&semi;
+                property2&colon; value&semi;
+                ...
+                property&num;&colon; value&semi;
+                &rbrace;
+        </code>
+    </pre>
+</body>
+</html>

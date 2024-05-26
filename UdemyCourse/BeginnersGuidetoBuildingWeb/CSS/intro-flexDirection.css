@@ -1,0 +1,45 @@
+.container{
+    color: white;
+    border: 5px dotted yellow;
+    display: inline-flex;
+    flex-direction: column-reverse;
+}
+
+.red{
+    background-color: red;
+    order: 10;
+}
+
+.orange{
+    background-color: orange;
+    order: 8;
+}
+
+.yellow{
+    background-color: yellow;
+    order: 9;
+}
+
+.green{
+    background-color: green;
+    order: 3;
+}
+
+.blue{
+    background-color: blue;
+    order: 6;
+}
+
+.indigo{
+    background-color: indigo;
+    order: 4;
+}
+
+.purple{
+    background-color: purple;
+    order: 5;
+}
+
+.container div{
+    flex-basis: 100px;
+}
