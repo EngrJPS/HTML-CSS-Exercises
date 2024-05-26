@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Exercise 3</title>
+
+    <style>
+        a {
+            margin-inline: 5px;
+        }
+        a:hover{
+            color: crimson;
+        }
+        .pagination{
+            display: inline-block;
+        }
+        .stretchButton-properties {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            margin-inline: 2.5px;
+            border-radius: 3px;
+            transition: padding 1s;
+        }
+        .stretchButton-properties:hover{
+            padding: 20px;
+        }
+
+        .clickButton-properties{
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            margin-inline: 2.5px;
+            border-radius: 3px;
+            transition: box-shadow 0.15s;
+        }
+
+        .clickButton-properties:hover{
+            box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.30);
+        }
+
+        .clickButton-properties:active{
+            margin-top: 5px;
+            margin-left: 5px;
+            box-shadow: none;
+        }
+
+        .combiButton-properties{
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 7px;
+            margin-inline: 4px;
+            border-radius: 3px;
+            transition: padding 1s, 
+                        margin 1s,
+                        opacity 0.15s;
+        }
+
+        .combiButton-properties:hover{
+            padding-left: 25px;
+            margin-left: 0px;
+            padding-right: 25px;
+            margin-right: 0px;
+        }
+        .combiButton-properties:active{
+            opacity: 0.70;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using the box model</h1>
+    <p>Pagination</p>
+    <div class="pagination">
+        <button>Back</button>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <button>Next</button>
+    </div>
+    <p>Stretch</p>
+    <button class="stretchButton-properties">Stretch</button>
+    <p>3D Click</p>
+    <button class="clickButton-properties">Shadow</button>
+    <p>Margin and padding together</p>
+    <button class="combiButton-properties">One</button>
+    <button class="combiButton-properties">Two</button>
+    <button class="combiButton-properties">Three</button>
+</body>
+</html>
