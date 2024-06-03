@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1dc0e2;
+}
+
+/* Navigation bar styles */
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#my_logo{
+    color: whitesmoke;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    color: whitesmoke;
+}
+
+li a{
+    position: relative;
+    padding-bottom: 1rem;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+li a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: antiquewhite;
+    transition: all 0.3s ease;
+}
+
+li a:hover::after{
+    width: 80%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: #f5b107;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #e6a90d;
+}
+
+/* Hero section */
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #1dc0e2;
+    z-index: -100;
+}
+
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+img{
+    max-width: 700px;
+    margin: auto;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: whitesmoke;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px whitesmoke;
+}
+
+.content p{
+    margin-bottom: 2rem;
+    color: whitesmoke;
+}
+
+/* Features section */
+
+section .header{
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.features .card{
+    background-color: #20cdf0;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #1ab2d0;
+    border-color: whitesmoke;
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: #1ab2d0;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.card h4{
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card p{
+    color: white;
+    margin-bottom: 1rem;
+}
+.features .card a{
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+    color: #f5b107;
+}
+
+/* pricing section */
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 4rem;
+}
+
+.pricing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #20cdf0;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    background-color: #1ab2d0;
+    color: whitesmoke;
+    border-color: white;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: whitesmoke;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed whitesmoke;
+}
+
+.pricing .card p i {
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.pricing .card button{
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+}
+
+.pricing .card button:hover{
+    background-color: #f5b107;
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0px 100px;
+}
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .column p{
+    color:  whitesmoke;
+    margin-bottom: 2rem;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: whitesmoke;
+    border:  1px solid whitesmoke;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+footer .column .socials a:hover{
+    color: whitesmoke;
+    background-color: #20cdf0;
+    border-color: white;
+}
+
+.column h4{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.column > .container_links {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-bottom: 1rem;
+    gap: 1.5rem;
+}
+
+.column .container_links> a{
+    display: inline;
+    transition: all 0.3s ease;
+    color: whitesmoke;
+}
+
+.column .container_links> a:hover{
+    color: #e6a90d;
+}
+
+footer .copyright{
+    grid-column-start: 4;
+    margin-bottom: 2rem;
+}
