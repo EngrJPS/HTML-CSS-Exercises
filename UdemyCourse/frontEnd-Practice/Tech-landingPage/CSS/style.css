@@ -16,7 +16,7 @@ section{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(./landPage1.jpg)no-repeat;
+    background: url(../images/landPage1.jpg)no-repeat;
     background-position: center;
     background-size: cover;    
     display: flex;
